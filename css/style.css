@@ -144,7 +144,7 @@ div.login-form {
 	margin-left: auto;
 	margin-right: auto;
 	width: 400px;
-	height: 300px;
+	height: 350px;
 	text-align: center;
 	background-color: rgba(52, 73, 94, 0.7);
 	border-radius: 15px;
@@ -173,6 +173,14 @@ div.input-boxes input{
 
 }
 
+input.valid{
+	border: 3px solid #36cc36;
+}
+
+input.invalid{
+	border: 3px solid orange;
+}
+
 div.login-button-container input{
 	display:block;
 	height: 45px;
@@ -183,7 +191,6 @@ div.login-button-container input{
 	font-size: 15px;
 	border: 2px solid #27AE60;
 
-
 }
 
 div.email-container i{
@@ -192,6 +199,7 @@ div.email-container i{
 	margin-left: 37px;
 	margin-top: 13px;
 	font-size: 25px;
+
 }
 
 div.password-container i{
@@ -200,6 +208,27 @@ div.password-container i{
 	margin-left: 37px;
 	margin-top: 13px;
 	font-size: 25px;
+}
+
+div.email-container p{
+	color: orange;
+	font-size: 12px;
+	height: 0;
+	opacity: 0;
+	font-weight: bold;
+	margin-top:-15px;
+}
+
+
+
+div.password-container p{
+	color: orange;
+	font-size: 12px;
+	height: 0;
+	opacity: 0;
+	font-weight: bold;
+	margin-top:-15px;
+
 }
 
 /*div.email-container::before{
