@@ -1,0 +1,246 @@
+/**
+Author: Patrick Furbert
+Date: May 1, 2018
+**/
+
+html, body {
+/*	background-color: #5f5f5f; grey*/
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	font-family: "sans-serif", "serif", "Arial";
+
+}
+
+body{
+	background-image: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+
+}
+
+div.container{
+	max-width: 1200px;
+	margin: 0 auto; /*the auto centers the item*/
+	padding: 0 30px;
+	z-index: 1;
+
+}
+
+header {
+	background-color: #000000; /*black*/
+	float: left;
+	width: 100%;
+	
+}
+
+header h1{
+	color:#ffffff; /*white*/
+	text-transform: uppercase;
+	float: left;
+	display:none;
+}
+
+header img.surgery-logo {
+	display: block;
+	max-width: 55px;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+header ul{
+	float: right;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;
+}
+
+header img.hamburger {
+	display: none;
+}
+
+@media all and (max-width: 768px){
+	header ul {
+		display: none;
+	}
+
+	header img.hamburger {
+		display: block;
+		float: right;
+		margin-top:27px;
+		max-width: 30px
+	}
+}
+
+header ul li{
+	display: inline-block; /*causes to display horizontal*/
+}
+
+header ul li a{
+	text-decoration: none; /*removes underline linke from a href*/
+	color: #ffffff; /*white*/
+	text-transform: uppercase; /*causes all letters to become uppercase*/
+	display: block;
+	margin: 0 0 0 10px;
+}
+
+header ul li a:hover{
+	color: grey;
+}
+
+div.overlay {
+	display: none;
+}
+
+div.overlay ul {
+	padding: 0;
+	margin: 0;
+	margin-top: 100px;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+div.overlay ul li{
+	display: block;
+}
+
+div.overlay ul li a{
+	text-decoration: none; /*removes underline linke from a href*/
+	color: #ffffff; /*white*/
+	text-transform: uppercase; /*causes all letters to become uppercase*/
+	display: block;
+	margin: 0 0 0 0px;
+	font-size: 50px;
+	padding: 10px;
+}
+
+div.overlay{
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+div.overlay img.close{
+	max-width: 30px;
+	position: absolute;
+	right: 30px;
+	top: 23px;
+}
+
+
+div.banner:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+div.login-form {
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 300px;
+	text-align: center;
+	background-color: rgba(52, 73, 94, 0.7);
+	border-radius: 15px;
+
+}
+
+div.login-form img.nursing{
+	width: 100px;
+	margin-top: -50px;
+}
+
+
+div.form-container{
+	padding-top: 0px;
+}
+
+div.input-boxes input{
+	display:block;
+	height: 45px;
+	width: 300px;
+	margin: auto;
+	margin-bottom: 28px;
+	padding-left: 35px;
+	border-radius: 4px;
+	font-size: 18px;
+
+}
+
+div.login-button-container input{
+	display:block;
+	height: 45px;
+	width: 100px;
+	margin: auto;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	font-size: 15px;
+	border: 2px solid #27AE60;
+
+
+}
+
+div.email-container i{
+	position: absolute;
+	display: block;
+	margin-left: 37px;
+	margin-top: 13px;
+	font-size: 25px;
+}
+
+div.password-container i{
+	position: absolute;
+	display: block;
+	margin-left: 37px;
+	margin-top: 13px;
+	font-size: 25px;
+}
+
+/*div.email-container::before{
+	font-family: "FontAwesome";
+	font-size: 28px;
+	position: absolute;
+	content: "\f007";
+	display: block;
+	margin-left: 37px;
+	margin-top: 10px;
+
+}
+
+div.password-container::before{
+	font-family: "FontAwesome";
+	font-size: 30px;
+	position: absolute;
+	content: "\f023";
+	display: block;
+	margin-left: 39px;
+	margin-top: 10px;
+*/
+}
+
+div.login-form, div.form-container, input{
+	resize: none;
+}
+
+div.login-button-container input{
+	text-align: center;
+
+
+}
+
+.button-login {
+	color: #fff;
+	background-color: #2ECC71;
+
+}
+
+div.login-form a{
+	color: #fff;
+	font-size: 15px;
+}
