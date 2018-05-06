@@ -7,15 +7,15 @@ $(document).ready(function(){
 
 $(".hamburger").click(function(){
 	$(".overlay").css("display", "block");
-})
+});
 
 $(".close").click(function(){
 	$(".overlay").css("display", "none");
-})
+});
 
 
 var emailRE = /^(\w+)@urmc\.rochester\.edu$/i;
-var passwordRE = /^[\w@-]{8,20}$/i;
+var passwordRE = /^[\w@!-]{8,20}$/i;
 
 //handler for username
 $(".email-input").keyup(() => {
